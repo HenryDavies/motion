@@ -9,6 +9,8 @@ import { layoutAnimations } from "../../motion/features/layout"
 import { FeatureComponents } from "../../motion/features/types"
 import { createDomVisualElement } from "./create-visual-element"
 
+console.log('reached');
+
 const featureBundle: FeatureComponents = {
     ...animations,
     ...gestureAnimations,
