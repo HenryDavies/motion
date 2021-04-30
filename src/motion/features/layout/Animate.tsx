@@ -89,6 +89,7 @@ class Animate extends React.Component<AnimateProps> {
         }: SharedLayoutAnimationConfig = {}
     ) => {
         const { visualElement, layout } = this.props
+        console.log('running animate');
 
         /**
          * Early return if we've been instructed not to animate this render.
@@ -168,6 +169,7 @@ class Animate extends React.Component<AnimateProps> {
         }
 
         const boxHasMoved = hasMoved(origin, target)
+        console.log({boxHasMoved});
 
         const animations = eachAxis((axis) => {
             /**
